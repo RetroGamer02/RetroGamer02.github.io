@@ -1,0 +1,18 @@
+h1,h2,h3,h4,p {
+color: #d58e36;
+}
+
+body {
+padding-left: 10%;
+padding-right: 10%;
+margin: auto;
+background-color: #0c1120;
+}
+#main {
+padding-left: 10px;
+padding-right: 10px;
+border: 1;
+border-radius: 16px;
+border-style: solid;
+border-color: #d58e36;;
+}
