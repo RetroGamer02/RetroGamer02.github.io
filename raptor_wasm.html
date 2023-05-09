@@ -3,6 +3,16 @@
 		<title>Raptor WASM</title>
 	</head>
 	<body>
+		<!-- Create the canvas that the C++ code will draw into -->
+		<canvas id="canvas" oncontextmenu="event.preventDefault()" width="657" height="657" style="cursor: none;"></canvas>
+
+		<!-- Allow the C++ to access the canvas element --> 
+		<script type="text/javascript">
+			var Module = {
+				canvas: (function() { return document.getElementById('canvas'); })()
+			};
+		</script>
+	
 		<script src="raptor.js"></script>
 	</body>
 </html>
