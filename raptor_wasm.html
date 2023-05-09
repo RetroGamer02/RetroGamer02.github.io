@@ -1,6 +1,26 @@
 <html>
 	<head>
 		<title>Raptor WASM</title>
+		<meta name="description" content="Top-down shooter Raptor - Call of the Shadows from 1994 ported for the web">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0.0, viewport-fit=cover">
+		<style>
+		  body {
+			background-color: black;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+		  }
+		  canvas {
+			width: 100vw;
+		  }
+		  @media screen and (min-width: 576px) {
+			canvas {
+			  width: initial;
+			  position: fixed;
+			  height: 100%;
+			}
+		  }
+		</style>
 	</head>
 	<body>
 		<!-- Create the canvas that the C++ code will draw into -->
